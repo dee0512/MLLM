@@ -1,0 +1,1214 @@
+[
+  {
+    "role": "user",
+    "content": "You are a learning agent that is trying to learn the relationship between pairs of words. You will participate in a number of trials. In each trial you will be presented with exactly two words and need to select either the first word or second. You will then receive an indication of whether you were correct or not, after which you will respond with \"[Next trial]\". The goal is to learn the relationship between the words as quickly as possible. Remember, during the trial respond with only the first word or the second word and no other text."
+  },
+  {
+    "role": "user",
+    "content": "baby car"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house baby"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball water"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish car"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house ball"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby car"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "car baby"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby car"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "water ball"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish car"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house baby"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby car"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball house"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "tree fish"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball house"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "tree fish"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "car baby"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "tree fish"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby car"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish car"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house ball"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish tree"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby house"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house baby"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby car"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "car baby"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby house"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "water ball"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish car"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "car fish"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball house"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "tree fish"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house baby"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "water ball"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "water ball"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "tree fish"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "car fish"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house ball"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish tree"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house ball"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "car fish"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house baby"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish car"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball house"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish tree"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball water"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "water ball"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball water"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball house"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby house"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby car"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "baby house"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish tree"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "house baby"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish tree"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball water"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "car fish"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "fish car"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball house"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "house"
+  },
+  {
+    "role": "user",
+    "content": "Please respond with \"[Next trial]\" to proceed to the next trial."
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  },
+  {
+    "role": "user",
+    "content": "ball water"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "[Next trial]"
+  }
+]

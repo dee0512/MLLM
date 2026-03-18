@@ -1,7 +1,20 @@
+import argparse
+import json
+import os
 import random
 from tqdm import tqdm
 from ollama import chat
 from pretty_chat import print_chat
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description='Run learning trials with deterministic randomness.')
+    parser.add_argument('--seed', type=int, default=0, help='Seed for randomization (default: 42).')
+    return parser.parse_args()
+
+
+args = parse_args()
+random.seed(args.seed)
 
 
 def no_four_consecutive_trials(trials):
@@ -10,10 +23,28 @@ def no_four_consecutive_trials(trials):
             return False
     return True
 
+
+def serialize_message(message):
+    if isinstance(message, dict):
+        return {
+            'role': message.get('role', ''),
+            'content': message.get('content', ''),
+        }
+    return {
+        'role': getattr(message, 'role', ''),
+        'content': getattr(message, 'content', str(message)),
+    }
+
 animals = ['house', 'water', 'ball', 'baby', 'fish', 'tree', 'car'] 
+random.shuffle(animals)
+os.makedirs('results', exist_ok=True)
+with open(f'results/shuffled_animals_{args.seed}.txt', 'w', encoding='utf-8') as output_file:
+    output_file.write(str(animals))
+
 correct = 0
 messages = [{'role': 'user', 
              'content': 'You are a learning agent that is trying to learn the relationship between pairs of words. You will participate in a number of trials. In each trial you will be presented with exactly two words and need to select either the first word or second. You will then receive an indication of whether you were correct or not, after which you will respond with "[Next trial]". The goal is to learn the relationship between the words as quickly as possible. Remember, during the trial respond with only the first word or the second word and no other text.'}]
+
 
 
 trials = []
@@ -62,4 +93,11 @@ for data in tqdm(training_data, desc="Trials"):
             messages=messages,
         )
         messages.append(response.message)
+
+        
 print_chat(messages)
+
+serialized_messages = [serialize_message(message) for message in messages]
+with open(f'results/messages_{args.seed}.json', 'w', encoding='utf-8') as output_file:
+    json.dump(serialized_messages, output_file, indent=2, ensure_ascii=True)
+
