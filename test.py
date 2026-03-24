@@ -64,6 +64,7 @@ for data in tqdm(trials, desc="Trials"):
     answer = response.message.content.strip().lower()
     if answer == data[0].lower():
         correct += 1
-       
+    else:
+        print(f'Incorrect: {data[0]} vs {data[1]} - Model answered: {answer}')
 
 print(f'Correct: {correct} out of {len(trials)}')
