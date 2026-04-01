@@ -68,4 +68,4 @@ for order in [0, 1]:
         else:
             print(f'Incorrect: {data[0]} vs {data[1]} - Model answered: {answer}')
 
-print(f'Correct: {correct} out of {len(trials)}')
+print(f'Correct: {correct} out of {len(trials) * 2} trials')
