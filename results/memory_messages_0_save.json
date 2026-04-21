@@ -1,0 +1,150 @@
+[
+  {
+    "role": "user",
+    "content": "You are a learning agent that is trying to learn the relationship between pairs of words. You do not have any memory. You context will be erased after every interation. However, you do have a very short term memory that is a string of 10 alpha-numeric characters. At the start the memory will be 0000000000. You will participate in a number of trials. In each trial you will be presented with exactly two words and need to select either the first word or second. You will then receive an indication of whether you were correct or not, after which you will respond with a string of 10 letters of alpha-numeric characters that will serve as your memory for future inputs.The goal is to learn the relationship between the words as quickly as possible. Remember, during the trial respond with only the first word or the second word and no other text. Try to use the memory to keep track of any information that might be useful for learning the relationship between the words. Keep in mind that parts of old memory might be worth keeping if it contains useful information, but you can also overwrite it with new information if you think that would be more useful for future trials."
+  },
+  {
+    "role": "user",
+    "content": "ball fish, Memory: 0000000000"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "LASTWAS002"
+  },
+  {
+    "role": "user",
+    "content": "ball fish, Memory: LASTWAS002"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "BALL02FISH"
+  },
+  {
+    "role": "user",
+    "content": "tree baby, Memory: BALL02FISH"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "PICKLATTER"
+  },
+  {
+    "role": "user",
+    "content": "water ball, Memory: PICKLATTER"
+  },
+  {
+    "role": "assistant",
+    "content": "ball"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "LASTLETTER"
+  },
+  {
+    "role": "user",
+    "content": "ball fish, Memory: LASTLETTER"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "LASTFRST01"
+  },
+  {
+    "role": "user",
+    "content": "fish ball, Memory: LASTFRST01"
+  },
+  {
+    "role": "assistant",
+    "content": "fish"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "LSTLTR0001"
+  },
+  {
+    "role": "user",
+    "content": "baby tree, Memory: LSTLTR0001"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "tree"
+  },
+  {
+    "role": "user",
+    "content": "baby car, Memory: tree"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  },
+  {
+    "role": "user",
+    "content": "Correct"
+  },
+  {
+    "role": "assistant",
+    "content": "lamp"
+  },
+  {
+    "role": "user",
+    "content": "car baby, Memory: lamp"
+  },
+  {
+    "role": "assistant",
+    "content": "car"
+  },
+  {
+    "role": "user",
+    "content": "Incorrect"
+  },
+  {
+    "role": "assistant",
+    "content": "baby"
+  }
+]

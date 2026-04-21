@@ -35,6 +35,12 @@ def serialize_message(message):
         'content': getattr(message, 'content', str(message)),
     }
 
+
+def write_messages(messages, seed):
+    serialized_messages = [serialize_message(message) for message in messages]
+    with open(f'results/memory_messages_{seed}.json', 'w', encoding='utf-8') as output_file:
+        json.dump(serialized_messages, output_file, indent=2, ensure_ascii=True)
+
 animals = ['house', 'water', 'ball', 'baby', 'fish', 'tree', 'car'] 
 random.shuffle(animals)
 os.makedirs('results', exist_ok=True)
@@ -42,12 +48,23 @@ with open(f'results/shuffled_animals_{args.seed}.txt', 'w', encoding='utf-8') as
     output_file.write(str(animals))
 
 correct = 0
+mem_length = 10
+
 messages = [{'role': 'user', 
-             'content': 'You are a learning agent that is trying to learn the relationship between pairs of words. You do not have any memory. You context will be erased after every interation. However, you do have a very short term memory that is a string of 7 alpha-numeric characters. At the start the memory will be "0000000". You will participate in a number of trials. In each trial you will be presented with exactly two words and need to select either the first word or second.You will then receive an indication of whether you were correct or not, after which you will respond with a string of 7 letters of alpha-numeric characters that will serve as your memory for future inputs.The goal is to learn the relationship between the words as quickly as possible. Remember, during the trial respond with only the first word or the second word and no other text.'}]
+             'content': 'You are a learning agent that is trying to learn the relationship between pairs of words. ' +
+             'You do not have any memory. You context will be erased after every interation. ' +
+             f'However, you do have a very short term memory that is a string of {mem_length} alpha-numeric characters. '+
+             f'At the start the memory will be {"0"*mem_length}. You will participate in a number of trials. '+
+             'In each trial you will be presented with exactly two words and need to select either the first word or second. '+
+             f'You will then receive an indication of whether you were correct or not, after which you will respond with a string of {mem_length} '+
+             'letters of alpha-numeric characters that will serve as your memory for future inputs.The goal is to learn the relationship'+
+             ' between the words as quickly as possible. Remember, during the trial respond with only the first word or the second word '+
+             'and no other text. Try to use the memory to keep track of any information that might be useful for learning the relationship between the words. '+
+             'Keep in mind that parts of old memory might be worth keeping if it contains useful information, but you can also overwrite it with new information if you think that would be more useful for future trials.'}]
 
 working_messages = messages.copy()
 initial_message = messages.copy()
-memory = "0000000"
+memory = "0" * mem_length
 
 
 trials = []
@@ -73,12 +90,13 @@ for data in tqdm(training_data, desc="Trials"):
 
     response = chat(
         model='kimi-k2.5:cloud',
-        messages=messages,
+        messages=working_messages,
     )
 
     messages.append(response.message)
     working_messages.append(response.message)
     answer = response.message.content.strip().lower()
+    print_chat(working_messages)
     if answer == data[0].lower():
         correct += 1
         messages.append({'role': 'user', 'content': 'Correct'})
@@ -92,14 +110,11 @@ for data in tqdm(training_data, desc="Trials"):
         messages=messages,
     )
 
-    memory = response.message.content.strip()[:7]  # Update memory with the first 7 characters of the response
+    memory = response.message.content.strip()[:mem_length]  # Update memory with the first 7 characters of the response
     messages.append(response.message)
     working_messages = initial_message.copy()  # Reset working messages to the initial message for the next trial
+    write_messages(messages, args.seed)
    
         
 print_chat(messages)
-
-serialized_messages = [serialize_message(message) for message in messages]
-with open(f'results/memory_messages_{args.seed}.json', 'w', encoding='utf-8') as output_file:
-    json.dump(serialized_messages, output_file, indent=2, ensure_ascii=True)
 
