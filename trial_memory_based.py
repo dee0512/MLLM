@@ -48,7 +48,7 @@ with open(f'results/shuffled_animals_{args.seed}.txt', 'w', encoding='utf-8') as
     output_file.write(str(animals))
 
 correct = 0
-mem_length = 10
+mem_length = 100
 
 messages = [{'role': 'user', 
              'content': 'You are a learning agent that is trying to learn the relationship between pairs of words. ' +
